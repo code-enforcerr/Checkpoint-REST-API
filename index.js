@@ -70,6 +70,7 @@ app.delete('/users/:id', async (req, res) => {
   } catch (err) {
     console.error(err); // Log error for debugging
     res.status(500).json({ message: 'Internal server error' });
+    
   }
 });
 
